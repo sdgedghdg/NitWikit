@@ -6,6 +6,8 @@ sidebar_position: 4
 
 # Folia
 
+![](../_images/folia.webp)
+
 Folia 是 Paper 的一个分支，由 Spottedleaf 开发。
 
 :::danger

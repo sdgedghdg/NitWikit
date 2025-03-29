@@ -43,6 +43,16 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="server-core-choose">
 <TabItem value="paper" label="Paper">
 
+  <div style={{textAlign: 'center'}}>
+    <a href="https://github.com">
+      <img
+        src="_images/paper.png"
+        style={{width: '400px'}}
+        alt="GitHub"
+      /><br /><b>GitHub</b>
+    </a>
+  </div>
+
 **优势**：
 
 - 性能 - 性能还可以
@@ -69,6 +79,8 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 <TabItem value="purpur" label="Purpur">
+
+![](_images/purpur.png)
 
 **优势**：
 
@@ -98,6 +110,8 @@ import TabItem from '@theme/TabItem';
 </TabItem>
 <TabItem value="leaves" label="Leaves">
 
+![](_images/leaves.svg)
+
 **优势**：
 
 - 特性 - 为生电而生，拥有专门的生电向特性支持
@@ -123,6 +137,8 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 
 </TabItem>
 <TabItem value="Leaf" label="Leaf">
+
+![](_images/leaf.png)
 
 **优势**：
 
@@ -200,6 +216,8 @@ leaves 基本完全支持客户端生电 Mod，包括但不限于 Carpet，pca�
 ### 1.12
 
 我们推荐 Beast
+
+![](_images/Beast.jpg)
 
 **优势**：
 
