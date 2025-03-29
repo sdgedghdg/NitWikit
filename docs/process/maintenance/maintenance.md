@@ -17,7 +17,7 @@ sidebar_position: 2
 
 ## 检查日志
 
-[日志](/docs/start/basic/basic.md)中包含了大量的玩家、插件、服务器行为。
+[日志](/docs/start/basic/what-is-log.md) 中包含了大量的玩家、插件、服务器行为。
 
 每次维护服务器时请务必查看服务器近期的日志。
 
