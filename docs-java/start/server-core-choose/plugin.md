@@ -44,12 +44,12 @@ import TabItem from '@theme/TabItem';
 <TabItem value="paper" label="Paper">
 
   <div style={{textAlign: 'center'}}>
-    <a href="https://github.com">
+    <a href="https://papermc.io">
       <img
         src="_images/paper.png"
         style={{width: '400px'}}
-        alt="GitHub"
-      /><br /><b>GitHub</b>
+        alt=""
+      />
     </a>
   </div>
 
