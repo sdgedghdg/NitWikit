@@ -12,6 +12,8 @@ const config = {
         titlePrefix: "主页",
         // 开始按钮文字
         start: "快速开始 🥵",
+        // 标题颜色
+        titleColor: "white",
     },
 
     markdown: {
