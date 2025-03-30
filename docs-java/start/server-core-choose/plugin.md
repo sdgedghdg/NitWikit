@@ -43,15 +43,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="server-core-choose">
 <TabItem value="paper" label="Paper">
 
-  <div style={{textAlign: 'center'}}>
-    <a href="https://papermc.io">
-      <img
-        src="_images/paper.png"
-        style={{width: '400px'}}
-        alt=""
-      />
-    </a>
-  </div>
+![](_images/papermc-wild.svg)
 
 **优势**：
 
