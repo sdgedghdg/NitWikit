@@ -7,7 +7,7 @@ sidebar_position: 1
 
 :::info
 
-`GitHub` https://github.com/ryan-clancy/PlugMan
+`GitHub` https://github.com/inrhor/Chemdah
 
 `MineBBS` https://www.minebbs.com/resources/.9650
 
