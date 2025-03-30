@@ -22,4 +22,4 @@ sidebar_position: 4
 
 旧官方文档：https://core.anxidc.com
 
-不知道谁的文档：https://q1c.gitbook.io/dragoncore-course
+q1 的文档：https://q1c.gitbook.io/dragoncore-course
