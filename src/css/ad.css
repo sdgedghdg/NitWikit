@@ -1,19 +1,37 @@
 /* 广告链接样式 */
 .ad-item {
-    margin-left: 1rem !important;
+    margin: 0 0.4rem !important;
     font-weight: 500;
     display: inline-flex !important;
     align-items: center;
-    transition: opacity 0.2s;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    color: var(--ifm-link-color);
+    white-space: nowrap;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    background-color: rgba(37, 160, 110, 0.08);
 }
 
 .ad-item:hover {
-    opacity: 0.8;
+    opacity: 0.9;
     text-decoration: none !important;
+    background-color: rgba(37, 160, 110, 0.15);
+    transform: translateY(-1px);
 }
 
 .ad-item::before {
     content: "🔹";
     margin-right: 0.3em;
     opacity: 0.7;
+    font-size: 0.85em;
+}
+
+/* 暗色模式 */
+html[data-theme='dark'] .ad-item {
+    background-color: rgba(54, 192, 133, 0.1);
+}
+
+html[data-theme='dark'] .ad-item:hover {
+    background-color: rgba(54, 192, 133, 0.18);
 }

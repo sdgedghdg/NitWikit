@@ -70,14 +70,14 @@ html[data-theme='dark'] {
   --text-secondary: #e2e8f0;
   --text-light: #a0aec0;
   
-  --bg-light: #1a202c;
-  --bg-dark: #0f1320;
-  --bg-card: #2d3748;
+  --bg-light: #444c56;
+  --bg-dark: #2D333B;
+  --bg-card: #22272E;
   
-  --border-color: #4a5568;
-  --border-color-dark: #718096;
+  --border-color: #444c56;
+  --border-color-dark: #545d68;
   
-  --ifm-navbar-background-color: rgba(26, 32, 44, 0.98);
+  --ifm-navbar-background-color: rgba(45, 51, 59, 0.98);
   --ifm-background-color: var(--bg-dark);
   --ifm-background-surface-color: var(--bg-card);
   
@@ -513,4 +513,329 @@ html[data-theme='dark'] a.card.padding--lg.cardContainer_fWXF:hover {
   background-color: rgba(45, 55, 72, 0.9);
 }
 
-/* 保留其他样式... */ 
+/* ======= 修复文章背景通铺问题 ======= */
+/* 确保主内容区域背景色覆盖整个内容 */
+.main-wrapper {
+  background-color: var(--ifm-background-color);
+  min-height: 100vh;
+}
+
+article {
+  background-color: var(--ifm-background-color);
+}
+
+/* 确保文档容器背景色通铺 */
+.container {
+  background-color: transparent;
+}
+
+/* 修复暗色模式下主内容区域 - 移除容器背景色 */
+html[data-theme='dark'] .main-wrapper,
+html[data-theme='dark'] article {
+  background-color: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .container {
+  background-color: transparent;
+}
+
+/* 文章内容区域通铺样式 */
+.markdown {
+  background-color: var(--ifm-background-color);
+  overflow: visible;
+}
+
+/* 文章页面背景 */
+.docs-wrapper {
+  background-color: var(--ifm-background-color);
+}
+
+/* 修复首页背景 */
+.homepage main {
+  background-color: var(--ifm-background-color);
+}
+
+/* 链接样式优化 */
+a.github-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+a.github-link:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+a.github-link::before {
+  content: '🔗';
+  margin-right: 4px;
+  font-size: 0.9em;
+}
+
+/* ======= 页脚样式优化 ======= */
+.footer {
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+/* 确保页脚内的容器也使用正确的背景色 */
+.footer .container,
+.footer .container-fluid {
+  background-color: var(--bg-card);
+}
+
+.footer__links {
+  background-color: var(--bg-card);
+}
+
+.footer__bottom {
+  background-color: var(--bg-card);
+}
+
+.footer__link-item {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer__title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.footer__copyright {
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+/* 暗色模式页脚样式适配 */
+html[data-theme='dark'] .footer,
+html[data-theme='dark'] .footer .container,
+html[data-theme='dark'] .footer .container-fluid,
+html[data-theme='dark'] .footer__links,
+html[data-theme='dark'] .footer__bottom {
+  background-color: var(--bg-card);
+  border-top-color: var(--border-color);
+}
+
+/* ======= 优化折叠区域 (Details/Summary) 样式 ======= */
+details.details_lb9f,
+details.details_b_Ee {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: var(--bg-card);
+  transition: all 0.2s ease;
+}
+
+details.details_lb9f:hover,
+details.details_b_Ee:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Alert 样式 */
+.alert--info {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-border-color: var(--primary);
+  --ifm-alert-color: var(--text-primary);
+  border-left: 3px solid var(--primary);
+}
+
+/* Summary 标题样式 */
+details summary {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  border-bottom: none;
+  transition: all 0.2s ease;
+}
+
+details[open] summary {
+  border-bottom-color: transparent;
+  color: var(--primary);
+}
+
+details summary:hover {
+  color: var(--primary);
+}
+
+details summary::before {
+  content: none;
+}
+
+details summary::after {
+  content: '▶';
+  font-size: 0.75em;
+  margin-left: auto;
+  color: var(--primary);
+  transition: transform 0.15s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+/* 折叠内容区域样式 */
+.collapsibleContent_i85q {
+  padding: 1rem;
+}
+
+/* 图片样式优化 */
+.collapsibleContent_i85q img {
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 0.75rem;
+  max-width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+/* 链接样式优化 */
+.collapsibleContent_i85q a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.collapsibleContent_i85q a:hover {
+  text-decoration: underline;
+}
+
+/* 暗色模式适配 */
+html[data-theme='dark'] details.details_lb9f,
+html[data-theme='dark'] details.details_b_Ee {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  box-shadow: none;
+}
+
+html[data-theme='dark'] .alert--info {
+  --ifm-alert-background-color: var(--bg-card);
+  --ifm-alert-color: var(--text-primary);
+}
+
+/* 为details添加一个更具体的选择器来覆盖可能存在的其他样式 */
+details.details_lb9f summary::before,
+details.details_b_Ee summary::before,
+details summary::before,
+.theme-doc-toc details summary::before,
+.alert details summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* 移除可能在左侧内边距或其他位置显示的图标 */
+details.details_lb9f summary,
+details.details_b_Ee summary {
+  padding-left: 1rem !important;
+}
+
+/* 修复特性区域卡片和文字样式 */
+html[data-theme='dark'] .features_t9lD {
+  background-color: var(--bg-dark) !important;
+}
+
+/* 卡片本身 */
+html[data-theme='dark'] .featureCard_B6MD,
+html[data-theme='dark'] [class*="featureCard"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+html[data-theme='dark'] .featureCard_B6MD:hover,
+html[data-theme='dark'] [class*="featureCard"]:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 标题使用主题色 */
+html[data-theme='dark'] .featureTitle_WnBL,
+html[data-theme='dark'] [class*="featureTitle"] {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+/* 图标移除阴影 */
+html[data-theme='dark'] .featureSvg_a16W,
+html[data-theme='dark'] [class*="featureSvg"] {
+  filter: none;
+}
+
+/* 确保文字主题色 */
+html[data-theme='dark'] .sectionTitle_KoEj,
+html[data-theme='dark'] [class*="sectionTitle"] {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] span.text--primary {
+  color: var(--primary) !important;
+}
+
+/* 主页底部CTA区域暗色模式 */
+html[data-theme='dark'] .footerCta_iqgm,
+html[data-theme='dark'] [class*="footerCta"] {
+  background-color: var(--bg-card) !important;
+}
+
+html[data-theme='dark'] .footerCtaTitle_VTvf,
+html[data-theme='dark'] [class*="footerCtaTitle"] {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .footerCtaSubtitle_pLXE,
+html[data-theme='dark'] [class*="footerCtaSubtitle"] {
+  color: var(--text-secondary);
+}
+
+html[data-theme='dark'] .textHighlight_tecp,
+html[data-theme='dark'] [class*="textHighlight"] {
+  color: var(--primary) !important;
+}
+
+/* 特性卡片统一样式（亮色与暗色模式） */
+
+/* 卡片基础样式 - 亮色模式 */
+.featureCard_B6MD,
+[class*="featureCard"] {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.featureCard_B6MD:hover,
+[class*="featureCard"]:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* 标题样式 - 亮色模式 */
+.featureTitle_WnBL,
+[class*="featureTitle"] {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
