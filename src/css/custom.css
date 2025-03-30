@@ -102,6 +102,8 @@ body {
   transition: all 0.3s ease;
   height: var(--ifm-navbar-height);
   padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  display: flex;
+  align-items: center;
 }
 
 .navbar__brand {
@@ -127,6 +129,38 @@ body {
 
 .navbar__items {
   align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+/* 导航栏中的链接在移动端隐藏（通用解决方案） */
+@media (max-width: 996px) {
+  /* 仅隐藏主导航栏中的链接，不影响侧边栏中的链接 */
+  .navbar__items .navbar__item.navbar__link {
+    display: none;
+  }
+  
+  /* 确保在侧边栏中的同样链接仍然可见 */
+  .navbar-sidebar .navbar__item.navbar__link {
+    display: flex !important;
+  }
+}
+
+/* 导航栏内部容器样式 */
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 3rem;
+}
+
+/* 让导航栏子元素也保持居中 */
+.navbar-sidebar .navbar__inner {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
 }
 
 .navbar__item {
