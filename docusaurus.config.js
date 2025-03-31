@@ -276,6 +276,30 @@ const config = {
             prism: {
                 theme: prismThemes.vsLight,
                 darkTheme: prismThemes.vsDark,
+                additionalLanguages: [
+                    'java', 'kotlin', 'groovy', 'scala', 
+                    'bash', 'powershell',
+                    'python', 'ruby', 'php', 'go', 'rust',
+                    'c', 'cpp', 'csharp', 
+                    'sql', 'json', 'yaml', 'toml', 
+                    'css', 'scss', 'less',
+                    'javascript', 'typescript', 'jsx', 'tsx',
+                    'markup', 'markdown',
+                    'nginx', 'docker', 'diff'
+                ],
+                defaultLanguage: 'plaintext',
+                magicComments: [
+                    {
+                        className: 'theme-code-block-highlighted-line',
+                        line: 'highlight-next-line',
+                        block: {start: 'highlight-start', end: 'highlight-end'},
+                    },
+                    {
+                        className: 'code-block-error-line',
+                        line: 'error-next-line',
+                        block: {start: 'error-start', end: 'error-end'},
+                    },
+                ],
             },
             // 颜色随系统切换
             colorMode: {
