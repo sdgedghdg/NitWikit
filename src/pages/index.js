@@ -15,7 +15,7 @@ function HomepageHeader() {
       <div className={styles.decorationDot + ' ' + styles.dot2}></div>
       <div className="container">
         <img 
-          src="/img/nitwikit-banner.png" 
+          src="/img/smooth-nitwikit-banner.png"
           alt={siteConfig.title} 
           className={styles.heroImage}
         />
