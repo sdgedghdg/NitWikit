@@ -85,6 +85,10 @@ https://itemsadder.devs.beer
 
 :::
 
+:::warning
+本项目处于开发状态
+:::
+
 CraftEngine 是一款专为 Minecraft 服务器设计的插件 + 服务端 mod,
 旨在通过配置文件动态创建自定义方块、物品和配方，
 从而实现高度灵活的自定义内容扩展。
