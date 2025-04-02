@@ -77,13 +77,73 @@ https://itemsadder.devs.beer
 
 :::info
 
-`GitHub` https://github.com/Xiao-MoMi/craft-engine
+`GitHu(部分开源)` https://github.com/Xiao-MoMi/craft-engine
 
 `文档(英文)` https://mo-mi.gitbook.io/xiaomomi-plugins
 
 `文档(中文)` https://momi.gtemc.cn
 
 :::
+
+CraftEngine 是一款专为 Minecraft 服务器设计的插件 + 服务端mod,
+旨在通过配置文件动态创建自定义方块、物品和配方，
+从而实现高度灵活的自定义内容扩展。
+
+该插件基于 Paper/Folia 服务器核心开发，支持 1.20.1 及以上版本，并通过 JVM 级注入技术提供卓越的性能、稳定性和扩展性。
+
+## 插件特点
+### 更安全的资源包保护
+
+:::danger
+不要尝试解压开启了 crash-tools 的的资源包！
+:::
+
+:::warning
+这个保护并不是100%的防御，
+你可能需要[《中华人民共和国著作权法》](https://www.gov.cn/guoqing/2021-10/29/content_5647633.htm) 的保护！
+
+如果发现有可以破解资源包的工具可以向本插件的 [Discord](https://discord.gg/WVKdaUPR3S) 频道提交问题！
+:::
+
+CraftEngine 提供了比 PackSquash 更强大的内置资源包保护
+
+![](_images/ce-rp.png)
+
+推荐配置：
+
+```yaml
+protection:
+  crash-tools:
+    method-1: true
+    method-2: true
+    method-3: true
+  obfuscation:
+    enable: true
+    seed: 0
+    fake-directory: true
+    escape-unicode: true
+    break-json: true
+    resource-location:
+      enable: true
+      random-namespace:
+        amount: 64
+        length: 9
+      random-path:
+        source: "obf"
+        depth: 32
+        anti-unzip: true
+      random-atlas:
+        amount: 5
+        use-double: true
+      bypass-textures:
+        - "@legacy_unicode"
+        - "@vanilla_font_textures"
+        - "@vanilla_item_textures"
+        - "@vanilla_block_textures"
+      bypass-models: []
+      bypass-sounds: []
+      bypass-equipments: []
+```
 
 </TabItem>
 
