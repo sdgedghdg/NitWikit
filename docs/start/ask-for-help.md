@@ -13,6 +13,12 @@ sidebar_position: 7
 
 :::
 
+:::tip
+
+我们**非常推荐**你阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
+
+:::
+
 ### 错误问问题的方式
 
 一般来说，入门任何的领域会遇到问题，都需要问问题，但大家基本都不欢迎以下的问题：
