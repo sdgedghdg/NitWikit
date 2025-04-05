@@ -133,7 +133,7 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 
 > https://plugins.ptms.ink/category/%E8%A1%8C%E5%86%85%E5%A4%8D%E5%90%88%E6%96%87%E6%9C%AC
 
-```
+```text
 [||||||||||||||||||||](gradient=#f6d365,#fda085)
 ```
 
