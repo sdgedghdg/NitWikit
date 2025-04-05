@@ -42,8 +42,6 @@ sidebar_position: 2
 
 ![](_images/Q&A/变量不显示-2.png)
 
-如果下载失败，看 [变量下载失败？](#变量下载失败)
-
 如果你想知道都有哪些扩展，提供了哪些变量，查看 [此处](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
 
 ## 什么是内建变量？
@@ -93,6 +91,8 @@ boolean:
 ```
 
 然后执行命令 `/papi reload`
+
+如果下载失败，看 [变量下载失败？](#变量下载失败手动安装)
 
 ## 变量下载失败？手动安装
 
