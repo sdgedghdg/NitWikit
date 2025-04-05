@@ -141,7 +141,7 @@ TabooLib Components，当你使用 TabooLib 框架的插件时，可以使用此
 
 更多用法见上方链接
 
-### 参考
+## 参考
 
 - https://zh.minecraft.wiki/w/%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81
 - https://docs.advntr.dev/minimessage/format.html
