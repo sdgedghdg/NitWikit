@@ -29,7 +29,9 @@ sidebar_position: 2
 
 在上方图片中，可以看到箭头所指一行是 `%vault_eco_balance%`
 
-你需要安装 [Vault](./../Vault/vault.md) 插件和 [经济插件](../XConomy.md)，接着使用
+你需要安装 [Vault](./../Vault/vault.md) 插件和 [经济插件](../XConomy.md)
+
+接着，确保你安装了 [PlaceHolderAPI](PlaceHolderAPI.md) 插件，执行下方命令
 
 ```bash
 /papi ecloud download Vault
@@ -41,6 +43,8 @@ sidebar_position: 2
 ![](_images/Q&A/变量不显示-2.png)
 
 如果下载失败，看 [变量下载失败？](#变量下载失败)
+
+如果你想知道都有哪些扩展，提供了哪些变量，查看 [此处](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
 
 ## 什么是内建变量？
 
