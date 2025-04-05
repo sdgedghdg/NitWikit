@@ -35,7 +35,7 @@ _(注意: ![image](https://github.com/user-attachments/assets/49472da4-9b50-4fa3
 
 比如下面这个 TrMenu 菜单例子：
 
-```yaml
+```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
   test:
     display:
@@ -96,7 +96,7 @@ _除非他们自身引入了 Adventure 库(如PlaceholderAPI)。_
 
 用一个 TrMenu 菜单配置展示下：
 
-```yaml
+```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
   test:
     display:
