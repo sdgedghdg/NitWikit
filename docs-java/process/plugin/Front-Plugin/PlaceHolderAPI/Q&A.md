@@ -27,7 +27,7 @@ sidebar_position: 2
 
 这里讲解一下第二种情况：
 
-在上方图片中，可以看到点券一行是 `%vault_eco_balance%`
+在上方图片中，可以看到箭头所指一行是 `%vault_eco_balance%`
 
 你需要安装 [Vault](./../Vault/vault.md) 插件和 [经济插件](../XConomy.md)，接着使用
 
